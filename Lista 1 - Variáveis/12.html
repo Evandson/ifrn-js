@@ -1,0 +1,12 @@
+<html>
+	<meta charset="UTF-8">
+	<script>
+		var valor = parseFloat(window.prompt("Informe o Valor da Prestação: "));
+		var taxa = parseFloat(window.prompt("Informe o Valor da Taxa : "));
+		var tempo = parseFloat(window.prompt("Informe o Tempo de Atraso: "));
+		
+		prestacao = valor + (valor * (taxa / 100) * tempo);
+		
+		window.alert("Valor da Prestação Corrigida " + prestacao);
+	</script>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		var nascimento = parseFloat(window.prompt("Informe o ano de nascimento: "));
+		idade = 2016 - nascimento;
+
+		window.alert("Sua idade: "+idade+" ano(s)");
+
+		if (idade >= 18) {
+			window.alert("Pode Votar");
+		}
+		else if (idade >= 16 && idade <=17){
+			window.alert("Voto Opcional");
+		} else {
+			window.alert("Não pode votar");
+		}
+	</script>
+</html>

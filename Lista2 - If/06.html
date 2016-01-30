@@ -1,0 +1,18 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		var quantidade = parseFloat(window.prompt("Informe a quantidade de laranjas: "));
+
+		if (quantidade < 1) {
+			window.alert("Quantidade inválida");
+		}
+		else if (quantidade >= 12) {
+			calc_custo = quantidade * 1.00;
+			window.alert("Custo da Compra: "+calc_custo);
+		}
+		else if (quantidade < 12) {
+			calc_custo = quantidade * 1.30;
+			window.alert("Custo da Compra: "+calc_custo);
+		} 
+	</script>
+</html>
