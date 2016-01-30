@@ -1,0 +1,20 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		var op = window.prompt("Você é adm ou defunto?");
+		switch(op){
+			case "adm":
+				window.alert("Bem vindo, Administrador!")
+				var total_defuntos = parseInt(window.prompt("Quatidade de defuntos"));
+				lucro = total_defuntos * 387
+				window.alert("Lucro: "+lucro);
+				break;
+			case "defunto":
+				window.alert("Bem vindo, defunto!");
+				var ano_morte = parseInt(window.prompt("Ano de morte:"))
+				dias_finado = 2016 - ano_morte
+				window.alert("Dias de Finados comemorados: "+dias_finado)
+				break	
+		}
+	</script>
+</html>
