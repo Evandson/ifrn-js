@@ -1,0 +1,13 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		var quantCigarro = parseFloat(window.prompt("Quantos Cigarros você fuma por dia?"));
+		var valorCigarro = parseFloat(window.prompt("Quanto Custa o Cigarro?"));
+		var tempo = parseFloat(window.prompt("A quantos anos você fuma?"));
+		
+		ano = tempo * 365;
+		prejuizo = quantCigarro * valorCigarro * (ano);
+		
+		window.alert("Dinheiro jogado no lixo: R$ " + prejuizo);
+	</script>
+</html>

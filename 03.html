@@ -1,0 +1,14 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		var a = parseFloat(window.prompt("Votos candidato A:"));
+		var b = parseFloat(window.prompt("Votos candidato B"));
+		
+
+		candA = (a / (a + b)) * 100;
+		candB = (b / (a + b)) * 100;
+
+		window.alert("Percentual de votos de A: "+ candA + "%");
+		window.alert("Percentual de votos de B: "+ candB + "%");
+	</script>
+</html>
