@@ -29,9 +29,17 @@
 		if (total_cand1 > total_cand2 && total_cand1 > total_cand3) {
 			window.alert("O vencedor é o Candidato 1!");
 			} else if (total_cand2 > total_cand1 && total_cand2 > total_cand3) {
-				window.alert("O vencedor é o Candidato 1!");
-				} else {
+				window.alert("O vencedor é o Candidato 2!");
+				} else if (total_cand3 > total_cand1 && total_cand3 > total_cand2){
 					window.alert("O vencedor é o Candidato 3!");
+				} else if ((total_cand1 == total_cand2) && ((total_cand1 && total_cand2) > total_cand3))  {
+					window.alert("Segundo Turno! Candidato 1 e Candidato 2");
+				} else if ((total_cand1 == total_cand3) && ((total_cand1 && total_cand3) > total_cand2)) {
+					window.alert("Segundo Turno! Candidato 1 e Candidato 3");
+				} else if ((total_cand2 == total_cand3) && ((total_cand2 && total_cand3) > total_cand1)) {
+					window.alert("Segundo Turno! Candidato 2 e Candidato 3");
+				} else if ((total_cand1 == total_cand2) && (total_cand2 == total_cand3) && (total_cand1 == total_cand3) ) {
+					window.alert("Empate!");
 		}
 	</script>
 </html>
