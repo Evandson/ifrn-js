@@ -1,0 +1,37 @@
+<html>
+<meta charset="UTF-8">
+	<script>
+		window.alert("Vamos votar!");
+		voto_nulo = 0;
+		total_cand1 = 0;
+		total_cand2 = 0;
+		total_cand3 = 0;
+		i = 0;
+		while (i < 5) {
+			var voto = parseInt(window.prompt("1-Candidato 1/ 2-Candidato 2/ 3-Candidato 3"));
+			if (voto != 1 && voto != 2 && voto != 3) {
+				  voto_nulo = voto_nulo + 1;
+				  window.alert("Candidato inválido!");
+			 	} else if (voto == 1) {
+			 		total_cand1 = total_cand1 + 1;
+					window.alert("Voto computado para Candidato 1");
+					} else if (voto == 2) {
+						total_cand2 = total_cand2 + 1;
+						window.alert("Voto computado para Candidato 2");
+						} else if (voto == 3) {
+							total_cand3 = total_cand3 + 1;
+							window.alert("Voto computado para Candidato 3");
+							}
+				i++;					
+		}
+		window.alert("Voto(s) Candidato 1: "+total_cand1+"\nVoto(s) Candidato 2: "+total_cand2+"\nVoto(s) Candidato 3: "+total_cand3+"\nVoto(s) nulo: "+voto_nulo);
+
+		if (total_cand1 > total_cand2 && total_cand1 > total_cand3) {
+			window.alert("O vencedor é o Candidato 1!");
+			} else if (total_cand2 > total_cand1 && total_cand2 > total_cand3) {
+				window.alert("O vencedor é o Candidato 1!");
+				} else {
+					window.alert("O vencedor é o Candidato 3!");
+		}
+	</script>
+</html>
