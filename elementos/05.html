@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+function limpador() {
+if(document.getElementById('nome').value!="") {
+	document.getElementById('nome').value="";
+	document.getElementById('email').value="";
+	}
+}
+
+</script>
+
+Nome: <input type="text" id="nome">
+Email: <input type="text" id="email">
+<input type="button" value="Limpar" onclick="limpador()">
+<html>
