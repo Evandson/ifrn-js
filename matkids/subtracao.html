@@ -25,15 +25,15 @@
 
 
 		<div id="formulario">
-			<h1>Adição</h1>
-			<h3>Informe dois números para fazer a soma</h3>
-			<input id="n1" type='text' size='10' value='' onkeypress='return SomenteNumero(event)'> +
+			<h1>Subtração</h1>
+			<h3>Informe dois números para fazer a subtração</h3>
+			<input id="n1" type='text' size='10' value='' onkeypress='return SomenteNumero(event)'> -
 			<input id="n2" type='text' size='10' value='' onkeypress='return SomenteNumero(event)'>
-			= <input id="soma" name="numero" disabled><br>
+			= <input id="subt" name="numero" disabled><br>
 			<button type="submit" class="button" style="vertical-align:middle" 
-			onclick="somar(document.getElementById('n1').value,
+			onclick="diminuir(document.getElementById('n1').value,
 						   document.getElementById('n2').value);">
-							<span>Somar </span></button>
+							<span>Subtrair </span></button>
 		</div>
 		
 		<div id="footer">
