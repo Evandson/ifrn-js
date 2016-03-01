@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matemática Kids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</head>
+
+	<body id="home">		
+		<div id="logo"><a href="index.html"><img src="imagens/matkidsmenu.png"></a></div>
+		<div id="enter"><a href="courses.html"><img src="imagens/conteudos.png"></a></div>
+
+
+		<script>
+			function SomenteNumero(e){
+			    var tecla = (window.event)?event.keyCode:e.which;   
+			    if ((tecla > 47 && tecla < 58)) return true;
+			    else {
+			    	if (tecla == 8 || tecla == 0) return true;
+				else  return false;
+			    }
+			}
+		</script>
+
+
+		<div id="formulario">
+			<h1>Jogos Subtração</h1><br>
+			<h3>Preencha os resultados!</h3><br>
+			<img src="imagens/seis.png"><br><br>
+			<h4>Você tem 5 maçãs, deu 3 para sua(seu) melhor amiga(o). Com quantas maçãs você ficou?</h4>
+			<input id="n4" autofocus="" type="text" onkeyup="if(document.getElementById('n4').value == '2')
+											document.getElementById('n4').style.color = '#79ad00' 
+							else document.getElementById('n4').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+
+			<img src="imagens/sete.png"><br><br>
+			<h4>Você tem 4 bananas, deu 3 para sua(seu) melhor amiga(o). Com quantas bananas você ficou?</h4>
+			<input id="n5" autofocus="" type="text" onkeyup="if(document.getElementById('n5').value == '1')
+											document.getElementById('n5').style.color = '#79ad00' 
+							else document.getElementById('n5').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			
+		</div>
+		
+		<div id="footer">
+		Copyright © MatKids
+		</div>
+	</body>
+</html>

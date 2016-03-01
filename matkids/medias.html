@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matemática Kids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</head>
+
+	<body id="home">		
+		<div id="logo"><a href="index.html"><img src="imagens/matkidsmenu.png"></a></div>
+		<div id="enter"><a href="courses.html"><img src="imagens/conteudos.png"></a></div>
+
+
+		<script>
+			function SomenteNumero(e){
+			    var tecla = (window.event)?event.keyCode:e.which;   
+			    if ((tecla > 47 && tecla < 58)) return true;
+			    else {
+			    	if (tecla == 8 || tecla == 0) return true;
+				else  return false;
+			    }
+			}
+		</script>
+
+
+		<div id="formulario">
+			<h1>Média</h1>
+			<h3>Informe os valores para verificar a Média</h3>
+			<input id="n1" type='text' size='10' value='' onkeypress='return SomenteNumero(event)'> +
+			<input id="n2" type='text' size='10' value='' onkeypress='return SomenteNumero(event)'>
+			= <input id="med" name="numero" disabled><br>
+			<button type="submit" class="button" style="vertical-align:middle" 
+			onclick="media(document.getElementById('n1').value,
+						   document.getElementById('n2').value);">
+							<span>Calcular </span></button>
+		</div>
+		
+		<div id="footer">
+		Copyright © MatKids
+		</div>
+	</body>
+</html>

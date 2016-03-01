@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matemática Kids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</head>
+
+	<body id="home">		
+		<div id="logo"><a href="index.html"><img src="imagens/matkidsmenu.png"></a></div>
+		<div id="enter"><a href="courses.html"><img src="imagens/conteudos.png"></a></div>
+
+
+		<script>
+			function SomenteNumero(e){
+			    var tecla = (window.event)?event.keyCode:e.which;   
+			    if ((tecla > 47 && tecla < 58)) return true;
+			    else {
+			    	if (tecla == 8 || tecla == 0) return true;
+				else  return false;
+			    }
+			}
+		</script>
+
+
+		<div id="formulario">
+			<h1>Jogos Adição</h1><br>
+			<h3>Preencha os resultados!</h3><br>
+			<img src="imagens/um.png"><br><br>
+			<h4>Informe a Quantidade de Crianças</h4>
+			<input id="n" autofocus="" type="text" onkeyup="if(document.getElementById('n').value == '3')
+											document.getElementById('n').style.color = '#79ad00' 
+							else document.getElementById('n').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+
+			<img src="imagens/dois.png"><br><br>
+			<h4>Informe a Quantidade de Carros</h4>
+			<input id="n1" autofocus="" type="text" onkeyup="if(document.getElementById('n1').value == '9')
+											document.getElementById('n1').style.color = '#79ad00' 
+							else document.getElementById('n1').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+
+			<img src="imagens/tres.png"><br><br>
+			<h4>Informe a Quantidade de Pipas</h4>
+			<input id="n2" autofocus="" type="text" onkeyup="if(document.getElementById('n2').value == '12')
+											document.getElementById('n2').style.color = '#79ad00' 
+							else document.getElementById('n').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+
+			<img src="imagens/quatro.png"><br><br>
+			<h4>Informe a soma dos numeros da imagem</h4>
+			<input id="n3" autofocus="" type="text" onkeyup="if(document.getElementById('n3').value == '9')
+											document.getElementById('n3').style.color = '#79ad00' 
+							else document.getElementById('n3').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+
+			<img src="imagens/cinco.png"><br><br>
+			<h4>Informe a soma dos numeros da imagem</h4>
+			<input id="n13" autofocus="" type="text" onkeyup="if(document.getElementById('n13').value == '45')
+											document.getElementById('n13').style.color = '#79ad00' 
+							else document.getElementById('n13').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'>
+			
+		</div>
+		
+		<div id="footer">
+		Copyright © MatKids
+		</div>
+	</body>
+</html>

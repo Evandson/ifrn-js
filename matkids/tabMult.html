@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Matemática Kids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</head>
+
+	<body id="home">		
+		<div id="logo"><a href="index.html"><img src="imagens/matkidsmenu.png"></a></div>
+		<div id="enter"><a href="courses.html"><img src="imagens/conteudos.png"></a></div>
+
+
+		<script>
+			function SomenteNumero(e){
+			    var tecla = (window.event)?event.keyCode:e.which;   
+			    if ((tecla > 47 && tecla < 58)) return true;
+			    else {
+			    	if (tecla == 8 || tecla == 0) return true;
+				else  return false;
+			    }
+			}
+		</script>
+
+
+		<div id="formulario">
+			<h1>Jogo Multiplicação</h1><br>
+			<h3>Preencha os resultados!</h3><br>
+			<h2>6 X 1 =</h2> 
+			<input id="n7" autofocus="" type="text" onkeyup="if(document.getElementById('n7').value == '6')
+											document.getElementById('n7').style.color = '#79ad00' 
+							else document.getElementById('n7').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			<h2>6 X 2 =</h2> 
+			<input id="n8" autofocus="" type="text" onkeyup="if(document.getElementById('n8').value == '12')
+											document.getElementById('n8').style.color = '#79ad00' 
+							else document.getElementById('n8').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			<h2>6 X 3 =</h2>  
+			<input id="n9" autofocus="" type="text" onkeyup="if(document.getElementById('n9').value == '18')
+											document.getElementById('n9').style.color = '#79ad00' 
+							else document.getElementById('n9').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			<h2>6 X 9 =</h2>  
+			<input id="n6" autofocus="" type="text" onkeyup="if(document.getElementById('n6').value == '54')
+											document.getElementById('n6').style.color = '#79ad00' 
+							else document.getElementById('n6').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			<h2>2 X 2 =</h2>  
+			<input id="n11" autofocus="" type="text" onkeyup="if(document.getElementById('n11').value == '4')
+											document.getElementById('n11').style.color = '#79ad00' 
+							else document.getElementById('n11').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+			<h2>7 X 6 =</h2>  
+			<input id="n12" autofocus="" type="text" onkeyup="if(document.getElementById('n12').value == '42')
+											document.getElementById('n12').style.color = '#79ad00' 
+							else document.getElementById('n12').style.color = '#df0606'" size='10' value='' onkeypress='return SomenteNumero(event)'><br><br>
+		</div>
+		
+		<div id="footer">
+		Copyright © MatKids
+		</div>
+	</body>
+</html>

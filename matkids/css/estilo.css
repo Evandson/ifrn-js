@@ -10,6 +10,8 @@
 
 #home {
     background-color: #ADD8E6;
+    background-image: url(../imagens/fundo.png);
+    background-repeat: repeat-y;
 }
 
 #footer {
@@ -99,7 +101,7 @@ input {
 }
 
 .button span:after {
-  content: '+';
+  content: ':)';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -115,6 +117,7 @@ input {
   opacity: 1;
   right: 0;
 }
+
 h1 {
     font-family: arial;
 }
