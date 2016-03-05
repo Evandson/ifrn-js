@@ -5,7 +5,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/meuestilo.css" rel="stylesheet">
-	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script src="js/jquery.js"></script> 
 	<script src="js/bootstrap.min.js"></script>
 
 	<title>Aroogle</title>
@@ -17,14 +18,16 @@
     		<h2>Aroogle</h2>
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" id="texto"/>
                     <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
+                        <button class="btn btn-info btn-lg" type="button" onclick="procuraString(document.getElementById('texto').value);">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </span>
                 </div>
             </div>
+            <br>
+            <div id="demo"></div>
         </div>
 	</div>
 </div>
