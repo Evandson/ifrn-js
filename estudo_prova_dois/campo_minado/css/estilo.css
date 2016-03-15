@@ -1,0 +1,20 @@
+body{
+	
+	text-align: center;	
+}
+
+#parcial, #parcial1 {
+	border: 0px;
+	color: #000;
+	font-size: 36pt;
+	text-align: center;	
+}
+
+#rodando {
+	display: block;
+}
+
+#score{
+	text-align:center;
+	font-size: 15pt;
+}

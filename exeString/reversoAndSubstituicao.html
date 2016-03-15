@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/meuestilo.css" rel="stylesheet">
+    <script type="text/javascript" src="js/myjs.js"></script>
+    <script src="js/jquery.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <title>Atividades</title>
+</head>
+<body>
+    <div class="container">
+         <div class="row">
+        <div class="col-md-6">
+            <h2>Substituição</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" id="txt"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" onclick="substituicao(document.getElementById('txt').value);">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <br><div id="subs"></div><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Reverso</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" id="texto"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" onclick="inverter(document.getElementById('texto').value);">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div id="demo"></div><br>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <h4>CPF</h4>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" id="cpf" onkeypress="return soNumeros(event);"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" onclick="tamanhoCPF(document.getElementById('cpf').value);">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <br><div id="campCPF"></div><br>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <h4>Telefone</h4>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" id="tel" onkeypress="return soNumeros(event);"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" onclick="tamanhoTel(document.getElementById('tel').value);">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <br><div id="campTel"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -4,10 +4,58 @@ function procuraString(texto) {
 	var procurar = document.getElementById("texto").value;
 	var strProcurar = procurar.toLowerCase();
 	
-	if (strInfo.indexOf(strProcurar) !== -1) {
-		//var result = strInfo.substring(10, 80); 
+	if (strInfo.indexOf(strProcurar) != -1){
 		document.getElementById("demo").innerHTML = "<b>Encontramos algo:</b><br><br>"+info;
 	} else {
 		document.getElementById("demo").innerHTML = "<b>Pesquisa não encotrada!</b>";
+	}
+}
+
+function substituicao(txt) {
+    var acentuadas = 'áàéêíóôúÁÀÉÊÍÓÔÚ';
+    var naoAcentuadas = 'aaeeioouAAEEIOOU';
+    var novaPalavra = '';
+    for(i = 0; i < txt.length; i++) {
+      if (acentuadas.search(txt.substr(i, 1)) >= 0) {
+      novaPalavra += naoAcentuadas.substr(acentuadas.search(txt.substr(i, 1)), 1);
+      }
+      else {
+       novaPalavra += txt.substr(i, 1);
+      }
+    }
+    return document.getElementById("subs").innerHTML = "<b>Texto com Substituição:</b><br>" + novaPalavra.toLowerCase();
+}
+
+function inverter(texto){
+    var info = document.getElementById("texto").value;
+    var strInfo = info.toString().split("");
+    var inversao = strInfo.reverse().join("");
+    document.getElementById("demo").innerHTML = "<br><b>Texto Invertido:</b><br>"+inversao;
+}
+
+function soNumeros(e){
+	var tecla = window.event?event.keyCode:e.wich;
+	if (tecla > 47 && tecla < 58){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function tamanhoCPF(cpf) {
+	var capture = document.getElementById("cpf").value;
+	if (capture.length == 11){
+		document.getElementById("campCPF").innerHTML = "Tamanho compatível!"
+	} else {
+		document.getElementById("campCPF").innerHTML = "Tamanho incompatível!"
+	}
+}
+
+function tamanhoTel(tel) {
+	var capture = document.getElementById("tel").value;
+	if (capture.length == 10){
+		document.getElementById("campTel").innerHTML = "Tamanho compatível!"
+	} else {
+		document.getElementById("campTel").innerHTML = "Tamanho incompatível!"
 	}
 }
