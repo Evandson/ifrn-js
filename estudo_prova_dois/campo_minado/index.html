@@ -14,7 +14,7 @@
 
 	function mina() {
 		var mina = document.getElementById('mina').innerHTML = "<b>Voçê Morreu</b>";
-		alert("Você Morreu!");
+		alert("Clicou na mina, você morreu!");
 		location.reload();
 	}
 
@@ -23,7 +23,7 @@
 			quantidade -= 1;
 			document.getElementById('restam').innerHTML = + quantidade;
 			if (quantidade <= 0) {
-				document.getElementById('restam').innerHTML = ":)"
+				document.getElementById('restam').innerHTML = ""
 			}
 		}
 
@@ -52,7 +52,7 @@
 
 
 			<p id="centerjogo">
-			<img src="imagens\textura.jpg" id="a1" width="30" onclick=" this.src='imagens/um.jpg'; restam(); reset();">
+			<img src="imagens\textura.jpg" id="a1" width="30" onclick=" this.src='imagens/um.jpg'; restam();">
 			<img src="imagens\textura.jpg" id="a1" width="30" onclick=" this.src='imagens/dois.jpg'; restam();">
 			<img src="imagens\textura.jpg" id="a1" width="30" onclick=" this.src='imagens/mina.jpg'; mina();">
 			<img src="imagens\textura.jpg" id="a1" width="30" onclick=" this.src='imagens/um.jpg'; restam();">
