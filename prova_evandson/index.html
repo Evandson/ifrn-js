@@ -1,0 +1,59 @@
+
+<script>
+
+	function sortear () {
+		var s1 = Math.floor(Math.random() * 5 + 1)
+		document.getElementById('s1').innerHTML = s1;
+
+		if (s1 == 1) {
+			document.getElementById('imagem').src='imagens/d1.jpg';
+		} else if (s1 == 2) {
+			document.getElementById('imagem').src='imagens/d2.jpg';
+
+		} else if (s1 == 3) {
+			document.getElementById('imagem').src='imagens/d3.jpg';
+
+		} else if (s1 == 4) {
+			document.getElementById('imagem').src='imagens/d4.jpg';
+
+		} else if (s1 == 5) {
+			document.getElementById('imagem').src='imagens/d5.jpg';
+
+		}
+
+		var s2 = Math.floor(Math.random() * 5 + 1)
+		document.getElementById('s2').innerHTML = s2;
+
+			if (s2 == 1) {
+			document.getElementById('imagem_dois').src='imagens/e1.jpg';
+		} else if (s2 == 2) {
+			document.getElementById('imagem_dois').src='imagens/e2.jpg';
+
+		} else if (s2 == 3) {
+			document.getElementById('imagem_dois').src='imagens/e3.jpg';
+
+		} else if (s2 == 4) {
+			document.getElementById('imagem_dois').src='imagens/e4.jpg';
+
+		} else if (s2 == 5) {
+			document.getElementById('imagem_dois').src='imagens/e5.jpg';
+
+		}
+
+		if ((s1 + s2)%2 == 0) {
+			document.getElementById('resp').innerHTML = "PAR";
+		} else {
+			document.getElementById('resp').innerHTML = "IMPAR";
+		}
+
+	}
+
+</script>
+<body>
+	<input type="button" id="sort" value="sortear" onclick="sortear();">
+	<img id="imagem" src="imagens/preto.jpg">
+	<img id="imagem_dois" src="imagens/preto.jpg">
+	<div id="s1"></div>
+	<div id="s2"></div>
+	<div id="resp"></div>
+</body>
